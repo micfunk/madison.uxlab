@@ -1,0 +1,28 @@
+/* main css file */
+.spread {
+  background-color: #695e4a;
+  padding: 200px 0;
+  margin-bottom: 8em; }
+  .spread h1, .spread h3 {
+    color: white; }
+  .spread h1 {
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: "Knockout 49 A", "Knockout 49 B", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em; }
+  .spread h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: "omnes-pro", helvetica, sans-serif; }
+
+.what-we-do h3 {
+  font-family: "Knockout 49 A", "Knockout 49 B", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+.what-we-do p {
+  font-family: "omnes-pro", helvetica, sans-serif;
+  font-size: 1.2em; }
