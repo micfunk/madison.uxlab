@@ -2,28 +2,51 @@
 /*colors*/
 /*type*/
 .spread {
-  background-color: #695e4a;
-  padding: 200px 0;
-  margin-bottom: 8em; }
+  background-color: #3daac9;
+  padding: 200px 0; }
   .spread h1, .spread h3 {
     color: white; }
   .spread h1 {
-    font-size: 48px;
+    font-size: 36px;
     letter-spacing: 1px;
-    font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
+    font-family: 'Knockout 30 A', 'Knockout 30 B';
     font-weight: 400;
-    font-style: normal;
-    line-height: 1.2em; }
+    font-style: normal; }
   .spread h3 {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.4em;
     letter-spacing: 1px;
     font-family: "omnes-pro", helvetica, sans-serif; }
 
-.what-we-do h3 {
-  font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
-  font-weight: 400;
-  font-style: normal; }
-.what-we-do p {
+.what-we-do {
+  text-align: center; }
+  .what-we-do h3 {
+    font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal; }
+  .what-we-do p {
+    font-family: "omnes-pro", helvetica, sans-serif;
+    font-size: 1.2em; }
+
+.idea, .mission {
   font-family: "omnes-pro", helvetica, sans-serif;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding: 50px 100px;
+  line-height: 1.5em; }
+  .idea h2, .mission h2 {
+    text-align: center;
+    font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif; }
+
+.full-width {
+  background-color: #f2e8d5; }
+
+footer {
+  display: block;
+  background-color: #87847f;
+  font-family: "omnes-pro", helvetica, sans-serif;
+  color: white; }
+  footer .footer {
+    padding: 50px 0; }
+
+.signup {
+  color: white !important; }

@@ -1,4 +1,5 @@
 .what-we-do {
+  text-align: center;
   h3 {
     font-family: $knockout30;
     font-weight: 400;
@@ -8,4 +9,19 @@
     font-family: $omnes;
     font-size: 1.2em;
   }
+}
+
+.idea, .mission {
+  font-family: $omnes;
+  font-size: 1.2em;
+  padding: 50px 100px;
+  line-height: 1.5em;
+  h2 {
+    text-align: center;
+    font-family: $knockout30;
+  }
+}
+
+.full-width {
+  background-color: #f2e8d5;
 }
