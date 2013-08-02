@@ -1,14 +1,22 @@
 .spread {
-  background-color: #3daac9;
   padding: 200px 0;
+
   h1, h3  {
     color: white;
   }
-  h1 {
-    font-size: 36px;
+
+  .headline {
+    font-size: 3em;
     letter-spacing: 1px;
-    font-family: 'Knockout 30 A', 'Knockout 30 B'; font-weight: 400; font-style: normal;
+    font-family: $knockout30;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2em;
   }
+
   h3 {
     font-weight: 300;
     font-size: 18px;

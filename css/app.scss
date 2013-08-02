@@ -1,4 +1,6 @@
 /* main css file */
+@import "reset";
+@import "foundation";
 @import "variables";
 @import "hero";
 @import "home";
@@ -6,4 +8,8 @@
 
 .signup {
   color: white !important;
+}
+
+body {
+  background-color: $grey;
 }
