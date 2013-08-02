@@ -13,10 +13,10 @@
     font-weight: 400;
     font-style: normal; }
   .spread h3 {
-    font-weight: 400;
-    font-size: 1.4em;
+    font-weight: 300;
+    font-size: 18px;
     letter-spacing: 1px;
-    font-family: "omnes-pro", helvetica, sans-serif; }
+    font-family: "proxima-nova", helvetica, sans-serif; }
 
 .what-we-do {
   text-align: center; }
@@ -25,11 +25,11 @@
     font-weight: 400;
     font-style: normal; }
   .what-we-do p {
-    font-family: "omnes-pro", helvetica, sans-serif;
+    font-family: "proxima-nova", helvetica, sans-serif;
     font-size: 1.2em; }
 
 .idea, .mission {
-  font-family: "omnes-pro", helvetica, sans-serif;
+  font-family: "proxima-nova", helvetica, sans-serif;
   font-size: 1.2em;
   padding: 50px 100px;
   line-height: 1.5em; }
@@ -43,7 +43,7 @@
 footer {
   display: block;
   background-color: #87847f;
-  font-family: "omnes-pro", helvetica, sans-serif;
+  font-family: "proxima-nova", helvetica, sans-serif;
   color: white; }
   footer .footer {
     padding: 50px 0; }
