@@ -5424,6 +5424,9 @@ footer {
   footer .footer {
     padding: 50px 0; }
 
+#form1 input {
+  background-color: #eaeaea; }
+
 .signup {
   color: white !important; }
 
