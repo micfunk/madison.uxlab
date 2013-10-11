@@ -1,10 +1,10 @@
 /* main css file */
-@import "reset";
 @import "foundation";
 @import "variables";
 @import "hero";
 @import "home";
 @import "footer";
+
 
 .signup {
   color: white !important;
@@ -12,4 +12,5 @@
 
 body {
   background-color: $grey;
+  color: white;
 }

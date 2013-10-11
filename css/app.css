@@ -1,92 +1,4 @@
 /* main css file */
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-body {
-  line-height: 1; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-nav ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none; }
-
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0; }
-
-input, select {
-  vertical-align: middle; }
-
 *,
 *:before,
 *:after {
@@ -5416,47 +5328,93 @@ a.th {
 
 /*colors*/
 /*type*/
-.spread {
-  padding: 200px 0; }
-  .spread h1, .spread h3 {
+.hero {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+  .hero h1, .hero h3 {
     color: white; }
-  .spread .headline {
+  .hero .headline {
     font-size: 3em;
     letter-spacing: 1px;
     font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
-    line-height: 1.2em; }
-  .spread h3 {
-    font-weight: 300;
-    font-size: 18px;
+    line-height: 1.3em;
+    color: #baab32; }
+  .hero h3 {
+    font-weight: 400;
+    font-size: 1.4em;
     letter-spacing: 1px;
     font-family: "proxima-nova", helvetica, sans-serif; }
 
+.logo {
+  padding: 50px 0;
+  display: block; }
+
+.btn {
+  display: inline-block;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #71CDDE;
+  padding: 15px 30px;
+  text-align: center;
+  color: #404041;
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 20px; }
+  .btn:hover {
+    color: white; }
+
 .what-we-do {
   text-align: center; }
+  .what-we-do h2 {
+    font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    letter-spacing: 1px;
+    color: #baab32; }
   .what-we-do h3 {
     font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
-    letter-spacing: 1px; }
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: #baab32; }
   .what-we-do p {
     font-family: "proxima-nova", helvetica, sans-serif;
     font-size: 1.2em; }
 
-.idea, .mission {
-  font-family: "proxima-nova", helvetica, sans-serif;
-  font-size: 1.2em;
-  padding: 50px 100px;
-  line-height: 1.5em; }
-  .idea h2, .mission h2 {
-    text-align: center;
-    font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
-    font-size: 3em; }
+.mission {
+  margin-bottom: 100px; }
+
+.idea h2, .mission h2 {
+  text-align: center;
+  font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
+  font-size: 3em;
+  color: #fbaf3f;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.illustration {
+  text-align: center;
+  padding-bottom: 100px; }
+  .illustration figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+
+/* helper classes */
+.full-width {
+  width: 100%;
+  clear: both; }
+
+.align-center {
+  text-align: center; }
 
 footer {
   display: block;
@@ -5470,4 +5428,5 @@ footer {
   color: white !important; }
 
 body {
-  background-color: #404041; }
+  background-color: #404041;
+  color: white; }
