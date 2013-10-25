@@ -5426,11 +5426,11 @@ footer {
 
 /* wufoo forms stuff */
 .wufoo {
-  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+  font-family: "proxima-nova", helvetica, sans-serif;
   letter-spacing: .01em; }
 
 .wufoo li {
-  width: 64%; }
+  width: 100%; }
 
 .info {
   display: inline-block;
@@ -5442,10 +5442,12 @@ footer {
 .info[class] {
   display: block; }
 
-.hideHeader .info, #payment.hideHeader li.first {
+.hideHeader .info, #payment.hideHeader
+li.first {
   display: none; }
 
-.info h2 {
+.info
+h2 {
   font-weight: normal;
   font-size: 160%;
   margin: 0 0 5px 0;
@@ -5461,7 +5463,8 @@ form ul {
   padding: 0;
   list-style-type: none; }
 
-* html form ul {
+*
+html form ul {
   width: 99%;
   zoom: 1; }
 
@@ -6574,7 +6577,7 @@ img, a img {
   color: #444444; }
 
 .wufoo label.desc, .wufoo legend.desc {
-  font-size: 95%;
+  font-size: 130%;
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -6810,9 +6813,28 @@ a.powertiny b, a.powertiny em {
   a.powertiny b, a.powertin em {
     color: #1a1a1a !important; } }
 /* - - - Custom Theme - - - */
+.signup h1 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  font-family: "Knockout 30 A", "Knockout 30 B", helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+  color: #baab32; }
+.signup h3 {
+  font-weight: 600;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-family: "proxima-nova", helvetica, sans-serif;
+  color: white; }
+
 .signup {
   color: white !important; }
 
 body {
   background-color: #404041;
-  color: white; }
+  color: white;
+  margin: 0;
+  padding: 0; }

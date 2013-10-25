@@ -8,6 +8,7 @@
 @import "form";
 @import "structure";
 @import "theme";
+@import "signup";
 
 
 .signup {
@@ -17,4 +18,7 @@
 body {
   background-color: $grey;
   color: white;
+  margin: 0;
+  padding: 0;
+
 }
