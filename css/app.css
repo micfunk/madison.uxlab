@@ -6830,11 +6830,16 @@ a.powertiny b, a.powertiny em {
   font-family: "proxima-nova", helvetica, sans-serif;
   color: white; }
 
+#how-it-works-modal {
+  color: black;
+  font: "proxima-nova", helvetica, sans-serif;
+  font-size: 18px; }
+
 .signup {
-  color: white !important; }
+  color: white; }
 
 body {
   background-color: #404041;
-  color: white;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: white; }

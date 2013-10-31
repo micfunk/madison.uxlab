@@ -9,16 +9,15 @@
 @import "structure";
 @import "theme";
 @import "signup";
-
+@import "modal";
 
 .signup {
-  color: white !important;
+  color: white;
 }
 
 body {
   background-color: $grey;
-  color: white;
   margin: 0;
   padding: 0;
-
+  color: white;
 }
