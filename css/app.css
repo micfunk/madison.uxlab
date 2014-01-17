@@ -5367,7 +5367,12 @@ a.th {
   font-weight: 400;
   margin: 20px; }
   .btn:hover {
-    color: white; }
+    color: white;
+    -webkit-box-shadow: 0px 3px 0px #2e2e2e;
+    box-shadow: 0px 3px 0px #2e2e2e; }
+  .btn:active {
+    -webkit-box-shadow: 0px 1px 0px #2e2e2e;
+    box-shadow: 0px 1px 0px #2e2e2e; }
 
 .what-we-do {
   text-align: center; }
@@ -5427,7 +5432,8 @@ footer {
 /* wufoo forms stuff */
 .wufoo {
   font-family: "proxima-nova", helvetica, sans-serif;
-  letter-spacing: .01em; }
+  letter-spacing: .01em;
+  font-weight: 400; }
 
 .wufoo li {
   width: 100%; }
@@ -5442,7 +5448,8 @@ footer {
 .info[class] {
   display: block; }
 
-.hideHeader .info, #payment.hideHeader
+.hideHeader .info,
+#payment.hideHeader
 li.first {
   display: none; }
 
@@ -5479,7 +5486,9 @@ form li {
   -o-transition: background-color 350ms ease-out;
   transition: background-color 350ms ease-out; }
 
-form ul:after, form li:after, form li div:after {
+form ul:after,
+form li:after,
+form li div:after {
   content: ".";
   display: block;
   height: 0;
@@ -5497,7 +5506,8 @@ form ul:after, form li:after, form li div:after {
 * html form li div {
   display: inline-block; }
 
-* + html form ul, * + html form li div {
+* + html form ul,
+* + html form li div {
   display: inline-block; }
 
 form li div {
@@ -5540,11 +5550,17 @@ form li.complex div span {
 form li.complex div span.full {
   margin: 0; }
 
-form li.complex div span.left, form li.complex div span.right {
+form li.complex div span.left,
+form li.complex div span.right {
   margin: 0;
   width: 48%; }
 
-form li.complex div span.full input, form li.complex div span.full select, form li.complex div span.left input, form li.complex div span.right input, form li.complex div span.left select, form li.complex div span.right select {
+form li.complex div span.full input,
+form li.complex div span.full select,
+form li.complex div span.left input,
+form li.complex div span.right input,
+form li.complex div span.left select,
+form li.complex div span.right select {
   width: 100%; }
 
 .left {
@@ -5556,11 +5572,15 @@ form li.complex div span.full input, form li.complex div span.full select, form 
 .clear {
   clear: both !important; }
 
-label span, .section span, p span, .likert span {
+label span,
+.section span,
+p span,
+.likert span {
   display: inline !important;
   float: none !important; }
 
-form li div label, form li span label {
+form li div label,
+form li span label {
   margin: 0;
   padding-top: 3px;
   clear: both;
@@ -5575,7 +5595,8 @@ fieldset {
   margin: 0;
   padding: 0; }
 
-label.desc, legend.desc {
+label.desc,
+legend.desc {
   font-size: 95%;
   font-weight: bold;
   color: #222;
@@ -5630,21 +5651,28 @@ form li div label var {
 form li div label .currently {
   display: none; }
 
-input.text, input.search, input.file, textarea.textarea, select.select {
+input.text,
+input.search,
+input.file,
+textarea.textarea,
+select.select {
   font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
   font-size: 100%;
   color: #333;
   margin: 0;
   padding: 2px 0; }
 
-input.text, input.search, textarea.textarea {
+input.text,
+input.search,
+textarea.textarea {
   border-top: 1px solid #7c7c7c;
   border-left: 1px solid #c3c3c3;
   border-right: 1px solid #c3c3c3;
   border-bottom: 1px solid #ddd;
   background: white url(../images/fieldbg.gif) repeat-x top; }
 
-input.nospin::-webkit-inner-spin-button, input.nospin::-webkit-outer-spin-button {
+input.nospin::-webkit-inner-spin-button,
+input.nospin::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
@@ -5657,7 +5685,8 @@ input.search {
   border-radius: 10px;
   padding-left: 6px; }
 
-input.checkbox, input.radio {
+input.checkbox,
+input.radio {
   display: block;
   margin: 4px 0 0 0;
   padding: 0;
@@ -5677,7 +5706,16 @@ input.other {
 * + html select.select {
   margin: 1px 0; }
 
-.center, form li span.center input.text, form li span.center label, form li.name span label, form li.date input.text, form li.date span label, form li.phone input.text, form li.phone span label, form li.time input.text, form li.time span label {
+.center,
+form li span.center input.text,
+form li span.center label,
+form li.name span label,
+form li.date input.text,
+form li.date span label,
+form li.phone input.text,
+form li.phone span label,
+form li.time input.text,
+form li.time span label {
   text-align: center; }
 
 form li.time select.select {
@@ -5695,13 +5733,16 @@ form li.price .right {
 .full {
   width: 100% !important; }
 
-input.small, select.small {
+input.small,
+select.small {
   width: 25%; }
 
-input.medium, select.medium {
+input.medium,
+select.medium {
   width: 50%; }
 
-input.large, select.large {
+input.large,
+select.large {
   width: 100%; }
 
 .msie[class] select.ieSelectFix {
@@ -5744,7 +5785,8 @@ li.file img {
   margin: 0 0 0 -10px;
   padding: 5px 5px 7px 5px; }
 
-li.file .file-size, li.file .file-type {
+li.file .file-size,
+li.file .file-type {
   color: #666;
   font-size: 85%;
   text-transform: uppercase; }
@@ -5796,7 +5838,8 @@ form li.likert {
   display: block;
   color: #565656; }
 
-.likert thead td, .likert thead th {
+.likert thead td,
+.likert thead th {
   background-color: #e6e6e6; }
 
 .likert td {
@@ -5808,7 +5851,8 @@ form li.likert {
   font-size: 85%;
   padding: 10px 6px; }
 
-.likert th, .likert td {
+.likert th,
+.likert td {
   border-bottom: 1px solid #dedede; }
 
 .likert tbody th {
@@ -5820,11 +5864,13 @@ form li.likert {
   font-size: 95%;
   font-weight: bold; }
 
-.likert tbody tr.alt td, .likert tbody tr.alt th {
-  background-color: #f5f5f5; }
+.likert tbody tr.alt td,
+.likert tbody tr.alt th {
+  background-color: whitesmoke; }
 
-.likert tbody tr:hover td, .likert tbody tr:hover th {
-  background-color: #FFFFCF; }
+.likert tbody tr:hover td,
+.likert tbody tr:hover th {
+  background-color: #ffffcf; }
 
 .col1 td {
   width: 30%; }
@@ -5841,10 +5887,13 @@ form li.likert {
 .col5 td {
   width: 12%; }
 
-.col6 td, .col7 td {
+.col6 td,
+.col7 td {
   width: 10%; }
 
-.col8 td, .col9 td, .col10 td {
+.col8 td,
+.col9 td,
+.col10 td {
   width: 6.5%; }
 
 .col11 {
@@ -5892,11 +5941,13 @@ button.link {
 button.link:hover {
   color: green; }
 
-.leftLabel li, .rightLabel li {
+.leftLabel li,
+.rightLabel li {
   width: 74% !important;
   padding-top: 9px; }
 
-.leftLabel .desc, .rightLabel .desc {
+.leftLabel .desc,
+.rightLabel .desc {
   float: left;
   width: 31%;
   margin: 0 15px 0 0; }
@@ -5904,52 +5955,69 @@ button.link:hover {
 .rightLabel .desc {
   text-align: right; }
 
-.leftLabel li div, .rightLabel li div {
+.leftLabel li div,
+.rightLabel li div {
   float: left;
   width: 65%; }
 
-* html .leftLabel li fieldset div, * html .rightLabel li fieldset div {
+* html .leftLabel li fieldset div,
+* html .rightLabel li fieldset div {
   float: right; }
 
-* + html .leftLabel li fieldset div, * + html .rightLabel li fieldset div {
+* + html .leftLabel li fieldset div,
+* + html .rightLabel li fieldset div {
   float: right; }
 
-.leftLabel .buttons, .rightLabel .buttons {
+.leftLabel .buttons,
+.rightLabel .buttons {
   padding-left: 23%; }
 
-.leftLabel .buttons div, .rightLabel .buttons div {
+.leftLabel .buttons div,
+.rightLabel .buttons div {
   float: none;
   margin: 0 0 0 20px; }
 
-.leftLabel p.instruct, .rightLabel p.instruct {
+.leftLabel p.instruct,
+.rightLabel p.instruct {
   width: 28%;
   margin-left: 5px; }
 
-.leftLabel .altInstruct .instruct, .rightLabel .altInstruct .instruct {
+.leftLabel .altInstruct .instruct,
+.rightLabel .altInstruct .instruct {
   margin-left: 31% !important;
   padding-left: 15px;
   width: 65%; }
 
-.noI form li, .altInstruct form li {
+.noI form li,
+.altInstruct form li {
   width: auto !important; }
 
-.noI .leftLabel .buttons, .noI .rightLabel .buttons {
+.noI .leftLabel .buttons,
+.noI .rightLabel .buttons {
   padding-left: 31%; }
 
-.noI .leftLabel .buttons div, .noI .rightLabel .buttons div {
+.noI .leftLabel .buttons div,
+.noI .rightLabel .buttons div {
   margin: 0 0 0 17px; }
 
-form li.leftHalf, form li.rightHalf {
+form li.leftHalf,
+form li.rightHalf {
   width: 47% !important; }
 
-form li.leftThird, form li.middleThird, form li.rightThird {
+form li.leftThird,
+form li.middleThird,
+form li.rightThird {
   width: 30% !important; }
 
-form li.leftFourth, form li.middleFourth, form li.rightFourth {
+form li.leftFourth,
+form li.middleFourth,
+form li.rightFourth {
   width: 23% !important;
   _width: 22% !important; }
 
-form li.leftFifth, form li.middleFifth, form li.rightFifth {
+form li.leftFifth,
+form li.middleFifth,
+form li.rightFifth {
   width: 18% !important;
   _width: 17% !important; }
 
@@ -5958,18 +6026,48 @@ form li.middleThird {
   float: left;
   margin-left: 2% !important; }
 
-form li.leftFourth, form li.middleFourth, form li.leftFifth, form li.middleFifth {
+form li.leftFourth,
+form li.middleFourth,
+form li.leftFifth,
+form li.middleFifth {
   clear: none !important;
   float: left; }
 
-form li.rightHalf, form li.rightThird, form li.rightFourth, form li.rightFifth {
+form li.rightHalf,
+form li.rightThird,
+form li.rightFourth,
+form li.rightFifth {
   clear: none !important;
   float: right; }
 
-li.leftHalf .small, li.rightHalf .small, li.leftHalf .medium, li.rightHalf .medium, li.leftThird .small, li.middleThird .small, li.rightThird .small, li.leftThird .medium, li.middleThird .medium, li.rightThird .medium, li.leftFourth .medium, li.middleFourth .medium, li.rightFourth .medium, li.leftFourth .small, li.middleFourth .small, li.rightFourth .small, li.leftFifth .medium, li.middleFifth .medium, li.rightFifth .medium, li.leftFifth .small, li.middleFifth .small, li.rightFifth .small {
+li.leftHalf .small,
+li.rightHalf .small,
+li.leftHalf .medium,
+li.rightHalf .medium,
+li.leftThird .small,
+li.middleThird .small,
+li.rightThird .small,
+li.leftThird .medium,
+li.middleThird .medium,
+li.rightThird .medium,
+li.leftFourth .medium,
+li.middleFourth .medium,
+li.rightFourth .medium,
+li.leftFourth .small,
+li.middleFourth .small,
+li.rightFourth .small,
+li.leftFifth .medium,
+li.middleFifth .medium,
+li.rightFifth .medium,
+li.leftFifth .small,
+li.middleFifth .small,
+li.rightFifth .small {
   width: 100% !important; }
 
-form li.leftHalf, form li.leftThird, form li.leftFourth, form li.leftFifth {
+form li.leftHalf,
+form li.leftThird,
+form li.leftFourth,
+form li.leftFifth {
   clear: left !important;
   float: left; }
 
@@ -6005,12 +6103,25 @@ form .instruct small {
   font-size: 80%;
   color: #444; }
 
-form li.focused .instruct, form li:hover .instruct {
+form li.focused .instruct,
+form li:hover .instruct {
   left: 100%;
   visibility: visible;
   opacity: 1; }
 
-.altInstruct .instruct, li.leftHalf .instruct, li.rightHalf .instruct, li.leftThird .instruct, li.middleThird .instruct, li.rightThird .instruct, li.leftFourth .instruct, li.middleFourth .instruct, li.rightFourth .instruct, li.leftFifth .instruct, li.middleFifth .instruct, li.rightFifth .instruct, .iphone .instruct {
+.altInstruct .instruct,
+li.leftHalf .instruct,
+li.rightHalf .instruct,
+li.leftThird .instruct,
+li.middleThird .instruct,
+li.rightThird .instruct,
+li.leftFourth .instruct,
+li.middleFourth .instruct,
+li.rightFourth .instruct,
+li.leftFifth .instruct,
+li.middleFifth .instruct,
+li.rightFifth .instruct,
+.iphone .instruct {
   visibility: visible;
   position: static;
   margin: 0;
@@ -6022,10 +6133,22 @@ form li.focused .instruct, form li:hover .instruct {
   font-style: italic;
   opacity: 1; }
 
-.altInstruct p.complex, li.leftHalf p.complex, li.rightHalf p.complex, li.leftThird p.complex, li.middleThird p.complex, li.rightThird p.complex, .iphone p.complex {
+.altInstruct p.complex,
+li.leftHalf p.complex,
+li.rightHalf p.complex,
+li.leftThird p.complex,
+li.middleThird p.complex,
+li.rightThird p.complex,
+.iphone p.complex {
   padding: 0 0 9px 0; }
 
-.hideSeconds .seconds, .hideAMPM .ampm, .hideAddr2 .addr2, .hideSecondary #previousPageButton, .hideCents .radix, .hideCents .cents, .hideState .state {
+.hideSeconds .seconds,
+.hideAMPM .ampm,
+.hideAddr2 .addr2,
+.hideSecondary #previousPageButton,
+.hideCents .radix,
+.hideCents .cents,
+.hideState .state {
   display: none; }
 
 form li.section {
@@ -6089,14 +6212,16 @@ form li.captcha label.desc {
   margin-bottom: 4px;
   float: none; }
 
-* + html #recaptcha_area, * + html #recaptcha_table {
+* + html #recaptcha_area,
+* + html #recaptcha_table {
   min-width: 450px !important; }
 
-* html #recaptcha_area, * html #recaptcha_table {
+* html #recaptcha_area,
+* html #recaptcha_table {
   width: 450px !important; }
 
 #recaptcha_widget_div table {
-  background: #fff; }
+  background: white; }
 
 form li.captcha .noscript iframe {
   border: none;
@@ -6155,7 +6280,7 @@ form li.paging-context {
   box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px; }
 
 .pgStyle1 .done var {
-  background: #ccc; }
+  background: #cccccc; }
 
 .pgStyle1 .selected var {
   background: #FFF7C0;
@@ -6171,14 +6296,17 @@ form li.paging-context {
 .pgStyle1 .selected b {
   font-weight: bold; }
 
-.circle6 td, .circle7 td {
+.circle6 td,
+.circle7 td {
   vertical-align: top;
   text-align: center; }
 
 .nopagelabel td.t {
   display: none; }
 
-.nopagelabel .pgStyle1 var, .circle6 var, .circle7 var {
+.nopagelabel .pgStyle1 var,
+.circle6 var,
+.circle7 var {
   width: 24px;
   height: 24px;
   line-height: 24px;
@@ -6192,7 +6320,8 @@ form li.paging-context {
 .nopagelabel .pgStyle1 var {
   margin-bottom: 0; }
 
-.circle6 b, .circle7 b {
+.circle6 b,
+.circle7 b {
   padding: 0; }
 
 .circle2 td {
@@ -6274,7 +6403,9 @@ form li.paging-context {
   float: none;
   padding-right: 0; }
 
-.hideMarkers .marker, .nopagelabel .pgStyle1 b, .nopagelabel .pgStyle2 em {
+.hideMarkers .marker,
+.nopagelabel .pgStyle1 b,
+.nopagelabel .pgStyle2 em {
   display: none !important; }
 
 #errorLi {
@@ -6312,7 +6443,8 @@ form li.error {
   background-color: #FFDFDF !important;
   margin-bottom: 3px !important; }
 
-form li label.error, form li input.error {
+form li label.error,
+form li input.error {
   color: #DF0000 !important;
   font-weight: bold !important; }
 
@@ -6320,11 +6452,12 @@ form li input.error {
   background: #fff !important;
   border: 2px solid #DF0000 !important; }
 
-form li.error label, form li.error span.symbol {
-  color: #000 !important; }
+form li.error label,
+form li.error span.symbol {
+  color: black !important; }
 
 form li.error .desc {
-  color: #DF0000 !important; }
+  color: #df0000 !important; }
 
 form p.error {
   display: none;
@@ -6342,7 +6475,8 @@ form li.error p.error {
 form li.complex p.error {
   padding: 0 0 9px 0 !important; }
 
-.rtl h1, .rtl form * {
+.rtl h1,
+.rtl form * {
   direction: rtl;
   text-align: right; }
 
@@ -6358,44 +6492,54 @@ form li.complex p.error {
 .rtl label.choice {
   margin: -17px 23px 0 0; }
 
-.rtl .leftLabel .desc, .rtl .rightLabel .desc {
+.rtl .leftLabel .desc,
+.rtl .rightLabel .desc {
   float: right;
   margin: 0 0 0 15px; }
 
-.rtl .leftLabel li div, .rtl .rightLabel li div {
+.rtl .leftLabel li div,
+.rtl .rightLabel li div {
   float: right; }
 
 .rtl .leftLabel .desc {
   text-align: left; }
 
-.rtl li.focused .instruct, .rtl li:hover .instruct {
+.rtl li.focused .instruct,
+.rtl li:hover .instruct {
   left: auto;
   right: 100%; }
 
-.rtl .leftLabel p.instruct, .rtl .rightLabel p.instruct {
+.rtl .leftLabel p.instruct,
+.rtl .rightLabel p.instruct {
   margin-right: 5px; }
 
-.rtl .leftLabel .altInstruct .instruct, .rtl .rightLabel .altInstruct .instruct {
+.rtl .leftLabel .altInstruct .instruct,
+.rtl .rightLabel .altInstruct .instruct {
   margin-right: 31% !important;
   padding-right: 15px; }
 
-.rtl .leftLabel .buttons, .rtl .rightLabel .buttons {
+.rtl .leftLabel .buttons,
+.rtl .rightLabel .buttons {
   padding-right: 23%; }
 
-.rtl .leftLabel .buttons div, .rtl .rightLabel .buttons div {
+.rtl .leftLabel .buttons div,
+.rtl .rightLabel .buttons div {
   float: none;
   margin: 0 20px 0 0; }
 
-.noI .rtl .leftLabel .buttons, .noI .rtl .rightLabel .buttons {
+.noI .rtl .leftLabel .buttons,
+.noI .rtl .rightLabel .buttons {
   padding-right: 31%; }
 
-.noI .rtl .leftLabel .buttons div, .noI .rtl .rightLabel .buttons div {
+.noI .rtl .leftLabel .buttons div,
+.noI .rtl .rightLabel .buttons div {
   margin: 0 17px 0 0; }
 
 .rtl .likert td label {
   text-align: center; }
 
-.rtl .likert caption, .rtl .likert tbody th {
+.rtl .likert caption,
+.rtl .likert tbody th {
   text-align: right; }
 
 .rtl .likert td {
@@ -6435,6 +6579,48 @@ form li.complex p.error {
 
 .rtl #errorLi * {
   text-align: center; }
+
+li label.desc {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  float: left; }
+
+textarea {
+  width: 600px !important; }
+
+input[type="submit"] {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-size: 1rem !important;
+  background-color: #baab32;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+  -webkit-border-radius: 10px !important;
+  border-radius: 10px !important; }
+  input[type="submit"]:hover {
+    background-color: blue; }
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type="url"],
+textarea {
+  background-color: #bcbcbc !important; }
+  input[type=text]:focus, input[type=text]:blur,
+  input[type=email]:focus,
+  input[type=email]:blur,
+  input[type=tel]:focus,
+  input[type=tel]:blur,
+  input[type="url"]:focus,
+  input[type="url"]:blur,
+  textarea:focus,
+  textarea:blur {
+    background-color: white; }
 
 html {
   background: #eee; }
