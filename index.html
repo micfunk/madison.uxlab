@@ -3,32 +3,30 @@
 
 <head>
 	<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The UX Lab at Bendyworks - User Experience Consulting for Organizations that do Good</title>
 
+  <link rel="stylesheet" href="assets/vendor/qtip2/jquery.qtip.css" />
   <link rel="stylesheet" href="app.css" />
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6794632/731602/css/fonts.css" />
+
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <script type="text/javascript" src="//use.typekit.net/eti4vmm.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="js/vendor/custom.modernizr.js"></script>
-  <script>
-
-  </script>
 </head>
 
 <body>
 
   <nav>
     <ul>
-      <li><a data-tooltip class="has-tip" title="Home" href="#">Top</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">What We Do</a></li>
-      <li><a href="">Process and Delivery</a></li>
-      <li><a href="">For Best Results</a></li>
-      <li><a href="">Submit Application</a></li>
+      <li><a class="tipped" title="Home" href="#">Top</a></li>
+      <li><a class="tipped" title="About" href="#about">About</a></li>
+      <li><a class="tipped" title="What We Do" href="#whawedo">What We Do</a></li>
+      <li><a class="tipped" title="Process and Delivery" href="#process">Process and Delivery</a></li>
+      <li><a class="tipped" title="For Best Results" href="#results">For Best Results</a></li>
+      <li><a class="tipped" title="Submit an Application" href="#submitapp">Submit Application</a></li>
     </ul>
   </nav>
 
@@ -37,8 +35,7 @@
       <h5>The UX Lab at Bendyworks</h5>
       <h1>Free User Experience Research and Consulting for Organizations that do Good</h1>
       <h3>User-centered research, experience design and innovation consulting for non-profits, students, and government and civic organizations.</h3>
-      <a href="#" data-reveal-id="how-it-works-modal" class="btn round">How It Works</a>
-      <a href="signup.html" class="btn round">Apply</a>
+      <a href="signup.html" class="btn round">Submit an Application</a>
     </section>
   </div>
 
@@ -74,7 +71,6 @@
         <!--     <h2>The Rules and Regulations</h2>
             <p>We don't design or build websites - we want to give you the tools to design and build websites that will delight your users. Engagements are limited. For workshops and meetings, and quantittive research, up to 4 hours. For user testing and research, a maximum of 3-5 users.</p>
           -->
-          <a href="#" data-reveal-id="how-it-works-modal" class="btn round">How It Works</a>
           <a href="signup.html" class="btn round">Apply</a>        </div>
         </div>
       </div>
@@ -88,32 +84,28 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+  <!-- to be concated and minified -->
+  <script src="assets/vendor/qtip2/jquery.qtip.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/foundation.min.js"></script>
+
+
   <script>
   $(document).foundation();
   </script>
   <!-- How it works modal -->
-
-  <div id="how-it-works-modal" class="reveal-modal">
-    <h2>How the UX Lab Works</h2>
-    <p>The UXLab is focused on <br />research and innovation.</p>
-    <h3>Process and Scope</h3>
-    <p>1-hour discovery meeting to learn about problem, history, requirements, etc.</p>
-    <p>Free tier services will take no longer than 1 work day total (8 hours)</p>
-    <p>Work will be completed within 1 month of initial meeting.</p>
-    <p>Summary report available afterwards.</p>
-    <p>Additional notes, analysis, raw materials, etc. available upon request.</p>
-    <p>All materials, processes, results, etc. are property of UXLab.</p>
-    <p>Confidentiality will be assured if any data is released.</p>
-    <p>All eligible clients get one free service.</p>
-    <h3>Client Responsibilities</h3>
-    <p>Have a well defined project.</p>
-    <p>Be able to make stakeholders available for meetings and participation.</p>
-    <p>Help to recruit participants for tests and workshops.</p>
-    <p>Provide financial incentives for user participation where necessary.</p>
-    <p>To find out more <a href="signup.html">apply today.</a></p>
-    <a class="close-reveal-modal">&#215;</a>
-  </div>
+<script>
+  $(function () {
+    $('nav a[title]').qtip({
+      style: {
+        classes: 'tooltip'
+      },
+      position: {
+        my: 'center right',  // Position my top left...
+        at: 'center left', // at the bottom right of...
+      }
+    });
+  });
+</script>
 
 
 </body>

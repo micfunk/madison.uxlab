@@ -1,29 +1,51 @@
 $proxima-nova-soft: 'proxima-nova-soft', helvetica, arial, sans-serif;
 $default-font-family: $proxima-nova-soft;
+$kulturista: "kulturista-web",serif;
 
-.pns {
+%kult {
+  font-family: $kulturista;
+}
+
+%kultlight {
+  @extend %kult;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%kultmed {
+  @extend %kult;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%pns {
   font-family: $default-font-family;
 }
 
 .pns-light {
-  @extend .pns;
+  @extend %pns;
+  font-style: normal;
   font-weight: 400;
 }
 
 .pns-reg {
-  @extend .pns;
+  @extend %pns;
+  font-style: normal;
   font-weight: 500;
 }
 
 .pns-semibold {
-  @extend .pns;
+  @extend %pns;
+  font-style: normal;
   font-weight: 600;
 }
 
 .pns-bold {
-  @extend .pns;
+  @extend %pns;
+  font-style: normal;
   font-weight: 700;
 }
+
 
 // Regular "proxima-nova-soft" 400 normal
 // Medium  "proxima-nova-soft" 500 normal

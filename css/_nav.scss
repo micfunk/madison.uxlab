@@ -1,15 +1,21 @@
 nav {
-  position: fixed;
-  right: 3rem;
-  top: 10rem;
-  a {
-    text-indent: -11111000px;
+  display: none;
+
+  @media #{$medium-up} {
     display: block;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    border: 2px solid black;
-    width: 15px;
-    height: 15px;
-    margin: 15px;
+    position: fixed;
+    right: 3rem;
+    top: 10rem;
+    a {
+      text-indent: -11111000px;
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 2px solid black;
+      width: 15px;
+      height: 15px;
+      margin: 15px;
+    }
   }
+
 }

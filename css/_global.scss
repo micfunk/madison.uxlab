@@ -1,0 +1,12 @@
+// some defaults -- overide if necessary
+
+// default type
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gray;
+}
+
+p, li, ol, ul, blockquote, cite {
+  @extend %kultlight;
+  color: $gray;
+}

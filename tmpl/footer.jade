@@ -1,0 +1,29 @@
+footer
+  .footer.row
+    .align-center
+    | Copyright 2013 UX Lab. All Rights Reserved.
+    a(href="mailto:mic@bendyworks.com") Questions and Comments?
+
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+  // to be concated and minified
+  script(src="assets/vendor/qtip2/jquery.qtip.js")
+  script(src="js/foundation.min.js")
+
+
+  | <script>
+  | $(document).foundation();
+  | </script>
+
+  | <script>
+  |   $(function () {
+  |     $('nav a[title]').qtip({
+  |       style: {
+  |         classes: 'tooltip'
+  |       },
+  |       position: {
+  |         my: 'center right',  // Position my top left...
+  |         at: 'center left', // at the bottom right of...
+  |       }
+  |     });
+  |   });
+  | </script>

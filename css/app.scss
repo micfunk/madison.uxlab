@@ -4,19 +4,23 @@
 
 @import "../assets/vendor/foundation/scss/foundation/settings";
 @import "../assets/vendor/foundation/scss/foundation";
-
-@import "tooltips";
+@import "helpers";
+@import "global";
 
 @import "hero";
-@import "home";
 @import "footer";
 /* wufoo forms stuff */
-@import "form";
-@import "structure";
 @import "theme";
 @import "signup";
-@import "modal";
 @import "nav";
+@import "buttons";
+@import "section-titles";
+@import "services";
+
+
+
+
+// vendored
 
 .signup {
   color: white;
@@ -26,6 +30,12 @@ body {
   background-color: $beige20 !important;
   margin: 0;
   padding: 0;
-  color: white;
+}
+
+.content-section {
+  padding: 8rem 0;
+  @media #{$medium-up} {
+    padding: 4rem 0;
+  }
 }
 
