@@ -1,26 +1,28 @@
 .hero {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    h1, h3  {
-      color: white;
+   @include grid-column(
+      $columns:12,
+      $collapse:true,
+      $float:left
+    );
+    text-align: left;
+    @media #{$medium-up} {
+      @include grid-column(
+         $columns:7
+       );
     }
-    .headline {
-      font-size: 3em;
-      letter-spacing: 1px;
-      font-family: $knockout30;
-      font-weight: 400;
-      font-style: normal;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      line-height: 1.3em;
-      color: $green;
-    }
-
-    h3 {
-      font-weight: 400;
-      font-size: 1.4em;
-      letter-spacing: 1px;
-      font-family: $proxima;
-    }
+  h5 {
+    @extend .pns-reg;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
+  h1 {
+    @extend .pns-semibold;
+    color: $orange;
+    font-size: 2.25rem;
+  }
+  h3  {
+    @extend .pns-reg;
+    color: black;
+  }
+}

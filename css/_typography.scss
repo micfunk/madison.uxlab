@@ -1,0 +1,31 @@
+$proxima-nova-soft: 'proxima-nova-soft', helvetica, arial, sans-serif;
+$default-font-family: $proxima-nova-soft;
+
+.pns {
+  font-family: $default-font-family;
+}
+
+.pns-light {
+  @extend .pns;
+  font-weight: 400;
+}
+
+.pns-reg {
+  @extend .pns;
+  font-weight: 500;
+}
+
+.pns-semibold {
+  @extend .pns;
+  font-weight: 600;
+}
+
+.pns-bold {
+  @extend .pns;
+  font-weight: 700;
+}
+
+// Regular "proxima-nova-soft" 400 normal
+// Medium  "proxima-nova-soft" 500 normal
+// Semibold  "proxima-nova-soft" 600 normal
+// Bold  "proxima-nova-soft" 700

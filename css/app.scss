@@ -1,6 +1,12 @@
 /* main css file */
-@import "foundation";
 @import "variables";
+@import "typography";
+
+@import "../assets/vendor/foundation/scss/foundation/settings";
+@import "../assets/vendor/foundation/scss/foundation";
+
+@import "tooltips";
+
 @import "hero";
 @import "home";
 @import "footer";
@@ -10,14 +16,16 @@
 @import "theme";
 @import "signup";
 @import "modal";
+@import "nav";
 
 .signup {
   color: white;
 }
 
 body {
-  background-color: $grey;
+  background-color: $beige20 !important;
   margin: 0;
   padding: 0;
   color: white;
 }
+
