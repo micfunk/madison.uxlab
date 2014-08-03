@@ -15,6 +15,9 @@ nav {
       width: 15px;
       height: 15px;
       margin: 15px;
+      &.current-section {
+        background-color: $gray;
+      }
     }
   }
 

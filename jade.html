@@ -14,12 +14,12 @@
   <body>
     <nav>
       <ul>
-        <li><a title="Home" href="#" class="tipped">Top</a></li>
-        <li><a title="About" href="#about" class="tipped">About</a></li>
-        <li><a title="What We Do" href="#whawedo" class="tipped">What We Do</a></li>
-        <li><a title="Process and Delivery" href="#process" class="tipped">Process and Delivery</a></li>
-        <li><a title="For Best Results" href="#results" class="tipped">For Best Results</a></li>
-        <li><a title="Submit an Application" href="#submitapp" class="tipped">Submit Application</a></li>
+        <li><a title="Home" href="#" class="nav-home tipped">Top</a></li>
+        <li><a title="About" href="#about" class="nav-about tipped">About</a></li>
+        <li><a title="What We Do" href="#whatwedo" class="nav-whatwedo tipped">What We Do</a></li>
+        <li><a title="Process and Delivery" href="#process" class="nav-process tipped">Process and Delivery</a></li>
+        <li><a title="For Best Results" href="#best-results" class="nav-best-results tipped">For Best Results</a></li>
+        <li><a title="Submit an Application" href="#apply" class="nav-apply tipped">Submit Application</a></li>
       </ul>
     </nav>
     <div class="row">
@@ -29,13 +29,21 @@
         <h3>User-centered research, experience design and innovation consulting for non-profits, students, and government and civic organizations.</h3><a href="#apply" class="btn round">Submit an Application</a>
       </section>
     </div>
+    <section id="about" class="full-width content-section">
+      <div class="row">
+        <h2 class="section-title">About the UXLab</h2>
+        <h3 class="section-subtitle">We help you make digital things that make people happy.</h3>
+      </div>
+    </section>
     <section id="whatwedo" class="full-width content-section">
       <div class="row">
         <h2 class="section-title">What We Do</h2>
         <h3 class="section-subtitle">We help you make digital things that make people happy.</h3>
+      </div>
+      <div class="row">
         <div class="services">
           <div class="service">
-            <div class="service-image"><img src="http://placehold.it/250x250"></div>
+            <div class="service-image"><img src="img/user-research.png"></div>
             <div class="service-copy">
               <h2>User Research</h2>
               <p>It all starts here. To build things for users, we need to know who your users are, what they think, and how to solve their problems. We can do user interviews, contextual inquiries/ethnographies, diary studies, card sorts, and other research methods and get information and data you can use to bring your product or service to the next level.</p>
@@ -112,6 +120,8 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <!-- to be concated and minified-->
       <script src="assets/vendor/qtip2/jquery.qtip.js"></script>
+      <script src="assets/vendor/jquery-waypoints/waypoints.js"></script>
+      <script src="js/waypoints.js"></script>
       <script src="js/foundation.min.js"></script><script>
       $(document).foundation();
       </script>

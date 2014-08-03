@@ -1,7 +1,7 @@
 /* main css file */
 @import "variables";
 @import "typography";
-
+@import "mixins";
 @import "../assets/vendor/foundation/scss/foundation/settings";
 @import "../assets/vendor/foundation/scss/foundation";
 @import "helpers";
@@ -16,7 +16,7 @@
 @import "buttons";
 @import "section-titles";
 @import "services";
-
+@import "process";
 
 
 

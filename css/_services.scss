@@ -1,53 +1,58 @@
-.service {
-  padding-bottom: 3rem;
-  @include grid-row();
-  .service-image {
-    @include grid-column(
-      $columns:12,
-      $collapse:true
-    );
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 50%;
-      height: auto;
-    }
-  }
-  .service-copy {
-    @include grid-column(
-      $columns:12,
-      $collapse:true
-      );
-  }
-
-  @media #{$medium-up} {
-    padding: 0 3rem 5rem 3rem;
+.services {
+  position: relative;
+  .service {
+    position: relative;
+    padding-bottom: 3rem;
+    @include grid-row($behavior: nest);
     .service-image {
       @include grid-column(
-        $columns:5,
-        $collapse:false,
-        $float:left
+        $columns:12,
+        $collapse:true
       );
       img {
-        width: auto;
-        float: left;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
       }
     }
     .service-copy {
       @include grid-column(
-        $columns:7,
-        $collapse:false
+        $columns:12,
+        $collapse:true
         );
     }
-    &:nth-child(even) {
+
+    @media #{$medium-up} {
+      padding: 0 3rem 5rem 3rem;
       .service-image {
         @include grid-column(
-          $float:right
+          $columns:5,
+          $collapse:false,
+          $float:left
         );
         img {
-          float: right;
+          width: auto;
+          float: left;
+        }
+      }
+      .service-copy {
+        @include grid-column(
+          $columns:7,
+          $collapse:false
+          );
+      }
+      &:nth-child(even) {
+        .service-image {
+          @include grid-column(
+            $float:right
+          );
+          img {
+            float: right;
+          }
         }
       }
     }
+
   }
 }
