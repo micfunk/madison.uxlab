@@ -30,3 +30,21 @@
         $('.nav-' + $(addCurrentSectionTo).attr('id')).addClass('current-section');
       });
     })(jQuery);
+
+// a little function to enable vertical alignment.
+
+(function ($) {
+// VERTICALLY ALIGN FUNCTION
+$.fn.vAlign = function() {
+    return this.each(function(i){
+    var ah = $(this).height();
+    var ph = $(this).parent().height();
+    var mh = Math.ceil((ph-ah) / 2);
+    $(this).css('margin-top', mh);
+    });
+};
+})(jQuery);
+
+$(function(){
+  $('.service-image, .service-copy').vAlign();
+});
