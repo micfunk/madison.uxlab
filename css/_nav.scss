@@ -1,6 +1,5 @@
 nav {
   display: none;
-
   @media #{$medium-up} {
     display: block;
     position: fixed;
@@ -11,12 +10,16 @@ nav {
       display: block;
       -webkit-border-radius: 50%;
               border-radius: 50%;
-      border: 2px solid black;
+      border: 2px solid $nav-gray;
       width: 15px;
       height: 15px;
       margin: 15px;
+      @include transition(all, 1s);
+      &:hover {
+        border: 2px solid $orange;;
+      }
       &.current-section {
-        background-color: $gray;
+        background-color: $nav-gray;
       }
     }
   }
