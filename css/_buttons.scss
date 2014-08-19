@@ -3,13 +3,13 @@
   -webkit-border-radius: 30px;
           border-radius: 30px;
   background-color: $blue;
-  padding: 15px 30px;
+  padding: 20px 40px;
   text-transform: uppercase;
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   @extend .pns-semibold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   -webkit-transition: all .1s; /* For Safari 3.1 to 6.0 */
     transition: all .1s;
   &:hover {

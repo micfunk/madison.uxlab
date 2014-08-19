@@ -1,4 +1,6 @@
 module.exports =
+  options:
+    reload: true
   css:
     files: ['**/*.scss']
     tasks: [

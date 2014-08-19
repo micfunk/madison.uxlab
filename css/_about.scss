@@ -1,0 +1,23 @@
+#about {
+  padding: 0 0;
+  background-color: #58585b;
+  .about-bg {
+    background-image: url(img/Untitled-1-01.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .about-content {
+    padding: 10rem 0;
+    @include grid-column(
+       $columns:6,
+       $collapse:true,
+       $float:right
+    );
+    h2, p {
+      color: white;
+    }
+    h3 {
+      width: 100%;
+    }
+  }
+}

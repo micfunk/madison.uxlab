@@ -2,7 +2,7 @@
   position: relative;
   .service {
     position: relative;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     @include grid-row($behavior: nest);
     .service-image {
       @include grid-column(
@@ -24,7 +24,7 @@
     }
 
     @media #{$medium-up} {
-      padding: 0 3rem 5rem 3rem;
+      padding-bottom: 10rem 0;
       .service-image {
         @include grid-column(
           $columns:5,

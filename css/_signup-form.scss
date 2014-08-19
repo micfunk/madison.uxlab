@@ -20,11 +20,14 @@
             border-radius: 10px;
     background-color: #ece7e1;
     border: none;
-    padding: 1.5rem;
+    padding: 1rem;
     -webkit-box-shadow: none;
             box-shadow: none;
     font-size: 1rem;
     margin-bottom: 3rem;
+  }
+  input {
+    height: auto;
   }
   #foli113, #foli4, #foli108, #foli6 {
     @include grid-columns-mq(12, 6, 6);

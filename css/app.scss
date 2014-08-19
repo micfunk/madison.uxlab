@@ -18,7 +18,9 @@
 @import "services";
 @import "process";
 @import "signup-form";
-
+@import "tooltips";
+@import "about";
+@import "best-results";
 
 
 // vendored
@@ -34,9 +36,9 @@ body {
 }
 
 .content-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
   @media #{$medium-up} {
-    padding: 4rem 0;
+    padding: 10rem 0;
   }
 }
 

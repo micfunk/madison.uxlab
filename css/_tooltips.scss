@@ -1,9 +1,14 @@
 .tooltip {
-  border: none;
-  border-color: none;
+  border-color: $gray;
   background-color: $gray;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  padding: 5px;
-  @extend .pns;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 2px;
+  @extend .pns-reg;
+  width: auto;
+  font-size: .75rem;
+  @include transition(all, .25s);
+  .qtip-content {
+    padding: 5px 8px;
+  }
 }

@@ -26,13 +26,16 @@
       <section class="hero">
         <h5>The UX Lab at Bendyworks</h5>
         <h1>Free User Experience Research and Consulting for Organizations that do Good</h1>
-        <h3>User-centered research, experience design and innovation consulting for non-profits, students, and government and civic organizations.</h3><a href="#apply" class="btn round">Submit an Application</a>
+        <h3>User-centered research, experience design and innovation consulting for non-profits, students, and government and civic organizations in Madison and surrounding areas.</h3><a href="#apply" class="btn round">Submit an Application</a>
       </section>
     </div>
     <section id="about" class="full-width content-section">
-      <div class="row">
-        <h2 class="section-title">About the UXLab</h2>
-        <h3 class="section-subtitle">We help you make digital things that make people happy.</h3>
+      <div class="row about-bg">
+        <div class="about-content">
+          <h2 class="section-title">About the UXLab</h2>
+          <h3 class="section-subtitle">We help you make digital things that make people happy.</h3>
+          <p>Our mission is to advance the practice of user experience design and increase design literacy in Madison and surrounding areas by bringing the best minds together to help non-profits, government and civic organizations and students enhance the experience of their products and services. The UXLab is run out of Bendyworks, during time given to us to learn, grow and give back.</p>
+        </div>
       </div>
     </section>
     <section id="whatwedo" class="full-width content-section">
@@ -79,7 +82,7 @@
       <div class="row">
         <h2 class="section-title">FOR THE BEST RESULTS</h2>
         <h3 class="section-subtitle">We ask for a little from you to help the project go smoothly. Your users will thank you.</h3>
-        <ul class="large-block-grid-2 small-block-grid-1">
+        <ul class="best-results-grid">
           <li>
             <h4>Have a well defined project.</h4>
             <p>Success for research, testing and consulting relies heavily on being able to identify a target audience and establish metrics for success.</p>
@@ -163,23 +166,8 @@
       <!-- to be concated and minified-->
       <script src="assets/vendor/qtip2/jquery.qtip.js"></script>
       <script src="assets/vendor/jquery-waypoints/waypoints.js"></script>
+      <script src="js/foundation.min.js"></script>
       <script src="js/app.js"></script>
-      <script src="js/foundation.min.js"></script><script>
-      $(document).foundation();
-      </script>
-      <script>
-        $(function () {
-          $('nav a[title]').qtip({
-            style: {
-              classes: 'tooltip'
-            },
-            position: {
-              my: 'center right',  // Position my top left...
-              at: 'center left', // at the bottom right of...
-            }
-          });
-        });
-      </script>
     </footer>
   </body>
 </html>

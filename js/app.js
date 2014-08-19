@@ -1,3 +1,7 @@
+//init foundation
+  $(document).foundation();
+
+
 (function($) {
   $('.nav-home, .nav-about, .nav-whatwedo, .nav-process, .nav-best-results, .nav-apply').on('click', function(e) {
     e.preventDefault();
@@ -31,6 +35,8 @@
       });
     })(jQuery);
 
+
+
 // a little function to enable vertical alignment.
 
 (function ($) {
@@ -47,4 +53,21 @@ $.fn.vAlign = function() {
 
 $(function(){
   $('.service-image, .service-copy').vAlign();
+});
+
+
+
+
+
+
+$(function () {
+  $('nav a[title]').qtip({
+    style: {
+      classes: 'tooltip',
+    },
+    position: {
+      my: 'center right',  // Position my top left...
+      at: 'center left', // at the bottom right of...
+    }
+  });
 });
