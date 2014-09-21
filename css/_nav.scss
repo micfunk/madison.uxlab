@@ -1,6 +1,5 @@
 nav {
   display: none;
-
   @media #{$medium-up} {
     display: block;
     position: fixed;

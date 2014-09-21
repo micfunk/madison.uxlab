@@ -3,18 +3,18 @@
 
 
 (function($) {
-  $('.nav-home, .nav-about, .nav-whatwedo, .nav-process, .nav-best-results, .nav-apply').on('click', function(e) {
+  $('nav li a, .contact-form-button').on('click', function(e) {
     e.preventDefault();
-
-    var clickedLinkClass = $(this).attr('class').substr(4),
-        scrollTo = $('#' + clickedLinkClass);
-
-    //$.smoothScroll({ scrollTarget: scrollTo });
-
+    var clickedLink = $(this).attr('href');
+    $.smoothScroll({
+      scrollTarget: clickedLink,
+      speed: 500,
+    });
     return false;
   });
 
   $('#home, #about, #whatwedo, #process, #apply, #process, #best-results').waypoint(function(direction) {
+
         var verticalWaypoints = $.waypoints().vertical,
             indexBefore = verticalWaypoints.indexOf(this);
 
@@ -32,8 +32,8 @@
           addCurrentSectionTo = this;
 
         $('.nav-' + $(addCurrentSectionTo).attr('id')).addClass('current-section');
-      });
-    })(jQuery);
+      }, { offset: 1 });
+})(jQuery);
 
 
 
