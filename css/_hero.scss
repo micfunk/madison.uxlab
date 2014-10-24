@@ -1,5 +1,5 @@
 .hero {
-  padding: 7rem 0 20rem 0;
+  padding: 7rem 0 5rem 0;
    @include grid-column(
       $columns:12,
       $collapse:true,
@@ -20,7 +20,7 @@
     margin-bottom: 1rem;
   }
   h1 {
-    @extend .pns-reg;
+    @extend .pns-semibold;
     color: $orange;
     font-size: 3rem;
     line-height: 1.3;

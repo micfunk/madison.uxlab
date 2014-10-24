@@ -21,6 +21,15 @@
         $columns:12,
         $collapse:true
         );
+      h2 {
+        @extend .pns-bold;
+        font-size: 2.5rem;
+      }
+      p {
+        @extend .pns-reg;
+        font-size: 1.15rem;
+      }
+
     }
 
     @media #{$medium-up} {
@@ -53,6 +62,5 @@
         }
       }
     }
-
   }
 }

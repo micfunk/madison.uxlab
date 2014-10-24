@@ -5,7 +5,7 @@ module.exports =
     files: ['**/*.scss']
     tasks: [
       # rebuild javascript
-      'sass'
+      'libsass'
     ]
   jade:
     files: ['**/*.jade']

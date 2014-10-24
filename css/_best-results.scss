@@ -4,6 +4,9 @@
    $spacing: $block-grid-default-spacing,
    $base-style: true
    );
+  h4 {
+    @extend .pns-bold;
+  }
   @media #{$medium-up} {
     @include block-grid(
      $per-row: 2,
