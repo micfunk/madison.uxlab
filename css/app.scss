@@ -7,20 +7,18 @@
 @import "helpers";
 @import "global";
 
-@import "hero";
-@import "footer";
-/* wufoo forms stuff */
-@import "signup";
+@import "sections/about";
+@import "sections/best-results";
+@import "sections/footer";
+@import "sections/hero";
+@import "sections/process";
+@import "sections/services";
+@import "sections/signup";
 @import "nav";
 @import "buttons";
 @import "section-titles";
-@import "services";
-@import "process";
 @import "signup-form";
 @import "tooltips";
-@import "about";
-@import "best-results";
-
 
 // vendored
 

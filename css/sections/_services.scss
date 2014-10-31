@@ -22,11 +22,11 @@
         $collapse:true
         );
       h2 {
-        @extend .pns-bold;
+        @extend .pns-semibold;
         font-size: 2.5rem;
       }
       p {
-        @extend .pns-reg;
+        @extend .pns-regular;
         font-size: 1.15rem;
       }
 
@@ -36,7 +36,8 @@
       padding-bottom: 10rem 0;
       .service-image {
         @include grid-column(
-          $columns:5,
+          $columns:3,
+          $push: 1,
           $collapse:false,
           $float:left
         );
@@ -47,13 +48,17 @@
       }
       .service-copy {
         @include grid-column(
-          $columns:7,
-          $collapse:false
+          $columns:6,
+          $collapse:false,
+          $float: right,
+          $pull: 1
           );
       }
       &:nth-child(even) {
         .service-image {
           @include grid-column(
+            $columns:3,
+            $collapse:false,
             $float:right
           );
           img {
