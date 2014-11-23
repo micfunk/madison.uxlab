@@ -2,10 +2,10 @@ module.exports =
   options:
     reload: true
   css:
-    files: ['**/*.scss']
+    files: ['css/**/*.scss']
     tasks: [
       # rebuild javascript
-      'libsass'
+      'sass:dist'
     ]
   jade:
     files: ['**/*.jade']

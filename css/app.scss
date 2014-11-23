@@ -3,7 +3,16 @@
 @import "typography";
 @import "mixins";
 @import "../assets/vendor/foundation/scss/foundation/settings";
-@import "../assets/vendor/foundation/scss/foundation";
+@import "../assets/vendor/foundation/scss/foundation/components/global";
+@import "../assets/vendor/foundation/scss/foundation/components/grid";
+@import "../assets/vendor/foundation/scss/foundation/components/clearing";
+@import "../assets/vendor/foundation/scss/foundation/components/forms";
+@import "../assets/vendor/foundation/scss/foundation/components/block-grid";
+@import "../assets/vendor/foundation/scss/foundation/components/inline-lists";
+@import "../assets/vendor/foundation/scss/foundation/components/buttons";
+@import "../assets/vendor/foundation/scss/foundation/components/reveal";
+
+
 @import "helpers";
 @import "global";
 

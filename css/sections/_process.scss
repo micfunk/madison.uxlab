@@ -1,6 +1,13 @@
 #process {
-  background-color: #545350;
+  background-color: $new-blue;
   h2 {
     color: white;
+  }
+  .process__item {
+    @include grid-column(4);
+  }
+  .full-width {
+    background-color: white;
+    height: 1px;
   }
 }

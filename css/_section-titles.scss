@@ -1,34 +1,31 @@
 .section-title {
   @extend .pns-semibold;
   @extend %center-text;
-  color: $warm-gray;
-  font-size: 1rem;
+  color: $rust;
+  font-size: 1.5rem;
   line-height: 1.5;
-  @media #{$medium-up} {
-    font-size: 2.25rem;
-  }
 }
 
 .section-subtitle {
   @extend %center-text;
   @include grid-column(
-    $columns:9,
+    $columns:10,
     $collapse:true,
     $center: true
   );
-  @extend %kultlight;
-  color: $orange;
-  font-size: 1rem;
+  @extend %pns-regular;
+  color: $text-gray;
+  font-size: 1.25rem;
   line-height: 1.4;
   padding-bottom: 1rem;
   @media #{$medium-up} {
     @include grid-column(
-      $columns:6,
+      $columns:9,
       $collapse:true,
       $center: true
     );
-    font-size: 1.5rem;
-    line-height: 2.25rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
     padding-bottom: 5rem;
   }
 }

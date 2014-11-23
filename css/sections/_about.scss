@@ -8,11 +8,17 @@
        $collapse: true,
        $center: true
     );
+    h2, h3 {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
   }
   p {
-    @extend .pns-regular;
+    @extend %proxima-nova-light;
     color: $warm-gray;
     font-size: 1.15rem;
+    padding-right: 200px;
   }
   .section-subtitle {
     padding-bottom: 2rem important;

@@ -2,13 +2,45 @@ footer
   .footer-wrapper
     ul
       li.footer__item
-        a(href="#") Terms and Conditions
+        a(href="#", data-reveal-id="terms-and-conditions-modal") The Fine Print
       li.footer__item
         a(href="mailto:mic@bendyworks.com") Questions?
       li.footer__item
         | &copy; 2014
       li.footer__item
         | Made with Love in Madison, WI
+
+  #terms-and-conditions-modal.reveal-modal(data-reveal)
+    h2 Terms and Conditions
+    p Sorry for the small print, but we feel this project will run smoother if everyone is on the same page.
+    h3 What We Do
+    p The UX Lab at Bendyworks is dedicated to user research and user experience design consulting. We gather data and do quantitative and qualitative research and analysis. We also run workshops and brainstorming sessions. We <strong>do not</strong> design or develop websites or applications.
+    h3 Eligibility
+    p We favor non-profits, civic organizations, and government entities. In some cases we will take on student projects if we deem it is within our mission. We will generally not take on for-profit entities, though may in some rare cases.
+    h3 Financial Support
+    p While our services are and always will be free, providing participation incentives, expenses for software services, and support for incidental costs can help the project be more successful. While financial support is not necessary, we will favor applicants that are willing to provide some financial support. We will always try to keep these costs to a minimum, not to exceed $300 total for a project. All expenses are passed to client at-cost, and will never be marked-up. We will always be 100% transparent regarding expenses.
+    h3 Selection
+    p Approval of applicants and project engagement is at the sole discretion of the principals of the UX Lab at Bendyworks. We reserve the right to not work with any organization at our sole discretion for any reason we deem appropriate.
+      h4 We will generally favor engagements with clients that:
+      ul
+        li Have a well defined project and goals
+        li Are not-for-profit, government or civic organizations, or students.
+        li May help raise the profile of the UX Lab at Bendyworks
+        li Have interesting or unique UX design and research challenges
+        li Will allow us to use data and work product for marketing and promotional purposes or to aggregate with other data for white papers and blog posts.
+        li Are willing to make stakeholders and decision makers heavily involved in the project.
+        li Are willing to provide some financial support.
+        li Do not have overt political affiliations.
+        li Are from Madison, Wisconsin or the surrounding areas.
+
+    h3 Ongoing Work
+    p We will not gurantee any additional work or support after our engagement ends.
+    h3 Capacity
+    p Currently, our capacity is one client per month maximum.
+    h3 Use of Work Product and Data
+    p By engaging with the UX Lab at Bendyworks, you are allowing us to use any and all data and work product from our engagement for case studies, marketing and promotional purposes, or for use in compendiums, research papers or blog posts. Exceptions can be negotiated, but we will favor applicants that allow us to use work product and data. We will never release or expose sensitive personal information or data that could harm or endanger participants in our research or studies or principals of organizations we engage with.
+    a.close-reveal-modal
+     | &#215;
 
   script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
   //- to be concated and minified

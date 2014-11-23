@@ -1,5 +1,5 @@
 module.exports =
   dist:
     options:
-      style: 'compressed'
+      outputStyle: 'compressed'
     files: 'app.css': 'css/app.scss'

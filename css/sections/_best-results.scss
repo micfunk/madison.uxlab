@@ -4,14 +4,22 @@
    $spacing: $block-grid-default-spacing,
    $base-style: true
    );
-  h4 {
-    @extend .pns-bold;
+   @media #{$medium-up} {
+     @include block-grid(
+      $per-row: 2,
+      $base-style: true
+      );
+   }
+  > li {
+    padding: 25px 50px 0px 50px;
   }
-  @media #{$medium-up} {
-    @include block-grid(
-     $per-row: 2,
-     $spacing: 7.5rem,
-     $base-style: true
-     );
+  h4 {
+    @extend .pns-semibold;
+    color: $warm-gray;
+  }
+  p {
+    color: $text-gray;
+    @extend %proxima-nova-light;
+    font-size: 1.15rem
   }
 }

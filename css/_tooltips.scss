@@ -4,7 +4,7 @@
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 2px;
-  @extend .pns-reg;
+  @extend %pns-regular;
   width: auto;
   font-size: .75rem;
   @include transition(all, .25s);

@@ -5,6 +5,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'default', [
     # set up everything for devlopment
-    'libsass:prod'
+    'sass:dist'
     'jade'
   ]

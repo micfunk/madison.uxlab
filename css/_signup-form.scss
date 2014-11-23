@@ -11,14 +11,14 @@
   }
   label {
     color: $gray;
-    @extend .pns-reg;
+    @extend .pns-semibold;
     font-size: 1rem;
     padding-bottom: 1.25rem;
   }
   input, textarea {
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    background-color: #ece7e1;
+    background-color: $ultra-light-gray;
     border: none;
     padding: 1rem;
     -webkit-box-shadow: none;

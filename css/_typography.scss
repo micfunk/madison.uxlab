@@ -1,8 +1,70 @@
 $proxima-nova-soft: 'proxima-nova-soft', helvetica, arial, sans-serif;
 $default-font-family: $proxima-nova-soft;
 $kulturista: "kulturista-web",serif;
+$proxima-nova: 'proxima-nova', helvetica, arial, sans-serif;
 
 $default-font-size: 1rem;
+
+// Proxima Nova Soft Weights
+// light: 300,
+// regular: 400,
+// medium: 500,
+// semibold: 600,
+// bold: 700
+
+@mixin type( $type: body-copy ) {
+  $types: (
+    primary-heading: (
+      font-family: $default-font-family,
+      font-size: 3rem,
+      font-weight: 600,
+    ),
+
+    secondary-heading: (
+      font-size: 16px,
+      font-weight: 700,
+      line-height: 22px
+    ),
+
+    body-copy: (
+      font-size: 16px,
+      line-height: 24px
+    ),
+  );
+
+  $type: map-get($types, $type);
+  font-family: map-get($type, font-family);
+  font-size: map-get($type, font-size);
+  font-weight: map-get($type, font-weight);
+}
+
+%page-title {
+  @include type(primary-heading);
+}
+
+%page-subtitle {
+
+}
+
+%section__title {
+
+}
+
+%section__teaser {
+
+}
+
+%section__block-title--large {
+
+}
+
+%section__block-title--medium {
+
+}
+
+%body-copy {
+
+}
 
 %kult {
   font-family: $kulturista;
@@ -24,7 +86,14 @@ $default-font-size: 1rem;
   font-family: $default-font-family;
 }
 
-.pns-regular {
+%proxima-nova-light {
+  font-family: $proxima-nova;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+%pns-regular {
   @extend %pns;
   font-style: normal;
   font-weight: 400;
@@ -56,7 +125,7 @@ $default-font-size: 1rem;
 
 
 h2 {
-  @extend pns-semibold;
+  @extend .pns-semibold;
 }
 
 // Regular "proxima-nova-soft" 400 normal
