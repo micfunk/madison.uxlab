@@ -3,11 +3,8 @@
   background-color: white;
   .about-content {
     padding: 10rem 0;
-    @include grid-column(
-       $columns:9,
-       $collapse: true,
-       $center: true
-    );
+    @include span-columns(6);
+    @include shift(4);
     h2, h3 {
       text-align: left;
       padding: 0;
@@ -18,7 +15,6 @@
     @extend %proxima-nova-light;
     color: $warm-gray;
     font-size: 1.15rem;
-    padding-right: 200px;
   }
   .section-subtitle {
     padding-bottom: 2rem important;

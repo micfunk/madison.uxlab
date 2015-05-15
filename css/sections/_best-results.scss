@@ -1,17 +1,10 @@
 .best-results-grid {
-  @include block-grid(
-   $per-row: 1,
-   $spacing: $block-grid-default-spacing,
-   $base-style: true
-   );
-   @media #{$medium-up} {
-     @include block-grid(
-      $per-row: 2,
-      $base-style: true
-      );
-   }
   > li {
-    padding: 25px 50px 0px 50px;
+    @include media($desktop) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @include span-columns(12)
   }
   h4 {
     @extend .pns-semibold;

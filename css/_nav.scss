@@ -1,6 +1,6 @@
 nav {
   display: none;
-  @media #{$medium-up} {
+  @include media($desktop) {
     display: block;
     position: fixed;
     right: 3rem;

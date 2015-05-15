@@ -3,7 +3,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    @include grid-row();
+    // @include grid-row();
     li {
       margin: 0;
       padding: 0;
@@ -25,18 +25,22 @@
             box-shadow: none;
     font-size: 1rem;
     margin-bottom: 3rem;
+    width: 100%;
   }
-  input {
-    height: auto;
-  }
+
   #foli113, #foli4, #foli108, #foli6 {
-    @include grid-columns-mq(12, 6, 6);
+    @include media ($desktop) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @include span-columns(12);
   }
+
   #foli109, #foli110 {
-    @include grid-column(
-      $columns:12,
-      $collapse:false,
-      $float:left
-      )
+    @include span-columns(12);
   }
+}
+
+.hide {
+  display: none;
 }

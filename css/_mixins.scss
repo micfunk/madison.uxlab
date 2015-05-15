@@ -6,32 +6,10 @@
   transform: translateY(-50%);
 }
 
-// a mixin to easily mix in grid columns once.
-@mixin grid-columns-mq($small, $medium, $large) {
+/* Neat's out container doesn't add padding, so this is a simple mixin to pad containers for mobile */
 
-  @media #{$small-only} {
-  @include grid-column(
-    $columns: $small,
-    $collapse:false,
-    $float:left
-    )
-  }
-
-  @media #{$medium-only} {
-    @include grid-column(
-      $columns: $medium,
-      $collapse:false,
-      $float:left
-    )
-  }
-
-  @media #{$large-up} {
-    @include grid-column(
-      $columns: $large,
-      $collapse:false,
-      $float:left
-    )
-  }
+@mixin mobile-padding($pad) {
+  padding: 0 $pad;
 }
 
 @mixin transition($target, $time) {

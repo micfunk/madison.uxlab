@@ -1,16 +1,12 @@
 .services {
-  position: relative;
-  @include grid-column(
-    $columns: 12
-  );
+  @include media($desktop) {
+    @include span-columns(12)
+  }
   .service {
-    position: relative;
-    @include grid-row($behavior: nest);
+    @include media($desktop) {
+      @include span-columns(4 of 12);
+    }
     .service-image {
-      @include grid-column(
-        $columns:12,
-        $collapse:true
-      );
       img {
         display: block;
         margin: 0 auto;
@@ -19,11 +15,6 @@
       }
     }
     .service-copy {
-      @include grid-column(
-        $columns:10,
-        $collapse:true,
-        $center:true
-        );
       h2 {
         @extend .pns-semibold;
         font-size: 2.5rem;
@@ -31,42 +22,6 @@
       p {
         @extend %pns-regular;
         font-size: 1.15rem;
-      }
-    }
-
-    @media #{$medium-up} {
-      padding-bottom: 10rem 0;
-      .service-image {
-        @include grid-column(
-          $columns:3,
-          $push: 1,
-          $collapse:false,
-          $float:left
-        );
-        img {
-          width: auto;
-          float: left;
-        }
-      }
-      .service-copy {
-        @include grid-column(
-          $columns:6,
-          $collapse:false,
-          $float: right,
-          $pull: 1
-          );
-      }
-      &:nth-child(even) {
-        .service-image {
-          @include grid-column(
-            $columns:3,
-            $collapse:false,
-            $float:right
-          );
-          img {
-            float: right;
-          }
-        }
       }
     }
   }

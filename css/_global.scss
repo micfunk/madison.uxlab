@@ -1,6 +1,9 @@
 // some defaults -- overide if necessary
 
 // default type
+* {
+  @include box-sizing(border-box);
+}
 
 body {
   background-color: #F2F4F4;
