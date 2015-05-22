@@ -1,26 +1,18 @@
 #about {
-  padding: 0 0;
   background-color: white;
   .about-content {
-    padding: 10rem 0;
     @include grid-column(
-       $columns:9,
-       $collapse: true,
-       $center: true
+      $columns:12,
+      $collapse: true,
+      $center: true
     );
-    h2, h3 {
-      text-align: left;
-      padding: 0;
-      margin: 0;
+    p {
+      @include grid-column(
+        $columns:9,
+        $collapse: true,
+        $center: true
+      );
     }
   }
-  p {
-    @extend %proxima-nova-light;
-    color: $warm-gray;
-    font-size: 1.15rem;
-    padding-right: 200px;
-  }
-  .section-subtitle {
-    padding-bottom: 2rem important;
-  }
+  @include section-titles($rust, $text-gray);
 }

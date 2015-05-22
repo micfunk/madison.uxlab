@@ -1,3 +1,4 @@
 #apply {
   background-color: white;
+  @include section-titles($rust, $text-gray);
 }

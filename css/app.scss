@@ -1,8 +1,8 @@
 /* main css file */
 @import "variables";
-@import "typography";
 @import "mixins";
-@import "../assets/vendor/foundation/scss/foundation/settings";
+
+@import "../assets/vendor/foundation/scss/foundation/functions";
 @import "../assets/vendor/foundation/scss/foundation/components/global";
 @import "../assets/vendor/foundation/scss/foundation/components/grid";
 @import "../assets/vendor/foundation/scss/foundation/components/clearing";
@@ -14,7 +14,9 @@
 
 
 @import "helpers";
+@import "section-titles";
 @import "global";
+@import "typography";
 
 @import "sections/about";
 @import "sections/best-results";
@@ -25,7 +27,6 @@
 @import "sections/signup";
 @import "nav";
 @import "buttons";
-@import "section-titles";
 @import "signup-form";
 @import "tooltips";
 
@@ -36,15 +37,20 @@
 }
 
 body {
-  background-color: $beige20 !important;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .content-section {
   padding: 6rem 0;
   @media #{$medium-up} {
-    padding: 10rem 0;
+    padding: 15rem 0;
   }
 }
 
+.wrap {
+  top: 1275px;
+  position: relative;
+  z-index: 1000;
+}

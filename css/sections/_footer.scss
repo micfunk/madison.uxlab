@@ -1,19 +1,25 @@
+/*section specific vars*/
+$footer-border: 3px solid $dark-gray;
+
 footer {
   @include grid-row();
   display: block;
   padding: 3rem;
+  background-color: white;
   .footer-wrapper {
     @include grid-column(12);
+    border-top: $footer-border;
     > ul {
       @include inline-list;
       margin: 0 auto;
-      border: 1px solid white;
+      border-right: $footer-border;
+      border-left: $footer-border;
+      text-align: center;
       .footer__item {
+        border-left: $footer-border;
         color: black;
         @extend .pns-medium;
         padding: .5rem;
-        border-left: 1px solid white;
-        text-align: center;
         &:first-child {
           border-left: none;
         }

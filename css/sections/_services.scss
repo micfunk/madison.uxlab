@@ -1,3 +1,8 @@
+#whatwedo {
+  background-color: $dark-gray;
+  @include section-titles($text-gray, $new-blue);
+}
+
 .services {
   position: relative;
   @include grid-column(
@@ -6,6 +11,7 @@
   .service {
     position: relative;
     @include grid-row($behavior: nest);
+    padding-bottom: 8rem;
     .service-image {
       @include grid-column(
         $columns:12,
@@ -27,45 +33,52 @@
       h2 {
         @extend .pns-semibold;
         font-size: 2.5rem;
+        color: $text-gray-15;
       }
       p {
-        @extend %pns-regular;
-        font-size: 1.15rem;
+        color: $text-gray-75;
       }
     }
 
     @media #{$medium-up} {
       padding-bottom: 10rem 0;
+
       .service-image {
         @include grid-column(
-          $columns:3,
-          $push: 1,
+          $columns:4,
           $collapse:false,
           $float:left
         );
         img {
           width: auto;
-          float: left;
         }
       }
       .service-copy {
         @include grid-column(
-          $columns:6,
+          $columns:7,
           $collapse:false,
-          $float: right,
-          $pull: 1
+          $float:right,
+          $push: 1
           );
       }
       &:nth-child(even) {
         .service-image {
           @include grid-column(
-            $columns:3,
+            $columns:4,
             $collapse:false,
             $float:right
           );
           img {
             float: right;
           }
+        }
+        .service-copy {
+          @include grid-column(
+            $columns:7,
+            $collapse:false,
+            $float:left,
+            $pull: 1
+            );
         }
       }
     }

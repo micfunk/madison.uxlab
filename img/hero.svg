@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 848.1 447.5" enable-background="new 0 0 848.1 447.5" xml:space="preserve">
+<g>
+	<path fill="#FDFDFE" d="M848.1,447.6H0.4v-421c0-14.3,11.7-26,26-26h795.7c14.3,0,26,11.7,26,26V447.6z"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M847.7,412.6H0V26C0,11.7,11.7,0,26,0h795.7c14.3,0,26,11.7,26,26V412.6z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<rect x="-27.4" y="-31" clip-path="url(#SVGID_2_)" fill="#3F3D3B" width="936.5" height="92.3"/>
+</g>
+<circle fill="#7F7F7F" cx="40.1" cy="29.9" r="9"/>
+<circle fill="#7F7F7F" cx="72.1" cy="29.9" r="9"/>
+<circle fill="#7F7F7F" cx="104.1" cy="29.9" r="9"/>
+<path fill="#EDEDED" d="M610.1,45.9H160c-8.2,0-15-6.7-15-15v0c0-8.2,6.8-15,15-15h450.1c8.2,0,15,6.7,15,15v0
+	C625.1,39.2,618.3,45.9,610.1,45.9z"/>
+<path fill="#BC3F26" d="M382,382H152.2c-10,0-18.1-8.1-18.1-18.1V134.6c0-10,8.1-18.1,18.1-18.1H382c10,0,18.1,8.1,18.1,18.1v229.3
+	C400.1,373.9,392,382,382,382z"/>
+<path fill="#D2CECB" d="M762.9,154.1H465.7c-10.2,0-18.4-8.2-18.4-18.4v0c0-10.2,8.2-18.4,18.4-18.4h297.2
+	c10.2,0,18.4,8.2,18.4,18.4v0C781.3,145.9,773.1,154.1,762.9,154.1z"/>
+<path fill="#D2CECB" d="M643.7,218.5h-178c-10.2,0-18.4-8.2-18.4-18.4v0c0-10.2,8.2-18.4,18.4-18.4h178c10.2,0,18.4,8.2,18.4,18.4v0
+	C662.1,210.3,653.9,218.5,643.7,218.5z"/>
+<line fill="none" stroke="#D2CECB" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="454.1" y1="255.8" x2="780.5" y2="255.8"/>
+<g>
+	
+		<line fill="none" stroke="#D2CECB" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="635.1" y1="288.1" x2="776.1" y2="288.1"/>
+	
+		<line fill="none" stroke="#D2CECB" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="454.1" y1="288.1" x2="606.1" y2="288.1"/>
+</g>
+<g>
+	
+		<line fill="none" stroke="#D2CECB" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="454.1" y1="320.4" x2="561.5" y2="320.4"/>
+	
+		<line fill="none" stroke="#D2CECB" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="583.1" y1="320.4" x2="786.5" y2="320.4"/>
+</g>
+<circle fill="#D2CECB" cx="69.9" cy="136.9" r="17.3"/>
+<circle fill="#D2CECB" cx="69.9" cy="191.3" r="17.3"/>
+<circle fill="#D2CECB" cx="69.9" cy="245.7" r="17.3"/>
+<circle fill="#D2CECB" cx="69.9" cy="300.1" r="17.3"/>
+<path fill="#D2CECB" d="M580.1,385h-125c-3.9,0-7-3.1-7-7v-19.4c0-3.9,3.1-7,7-7h125c3.8,0,7,3.1,7,7V378
+	C587.1,381.9,583.9,385,580.1,385z"/>
+</svg>

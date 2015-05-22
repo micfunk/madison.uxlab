@@ -1,3 +1,12 @@
+#hero {
+  background-color: $new-blue;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+  * {
+    color: white !important;
+  }
+}
 .hero {
   padding: 7rem 0 5rem 0;
    @include grid-column(
@@ -37,7 +46,6 @@
   }
 
   h3  {
-    @extend %kultlight;
     color: black;
     font-size: 1.25rem;
     line-height: 1.8;

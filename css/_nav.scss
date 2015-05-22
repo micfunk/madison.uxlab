@@ -5,12 +5,12 @@ nav {
     position: fixed;
     right: 3rem;
     top: 10rem;
+    z-index: 10000;
     ul {
       list-style-type: none;
       padding-left: 30px;
     }
     a {
-
       text-indent: -11111000px;
       display: block;
       -webkit-border-radius: 50%;

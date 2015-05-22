@@ -42,46 +42,6 @@ $default-font-size: 1rem;
   @include type(primary-heading);
 }
 
-%page-subtitle {
-
-}
-
-%section__title {
-
-}
-
-%section__teaser {
-
-}
-
-%section__block-title--large {
-
-}
-
-%section__block-title--medium {
-
-}
-
-%body-copy {
-
-}
-
-%kult {
-  font-family: $kulturista;
-}
-
-%kultlight {
-  @extend %kult;
-  font-style: normal;
-  font-weight: 300;
-}
-
-%kultmed {
-  @extend %kult;
-  font-style: normal;
-  font-weight: 400;
-}
-
 %pns {
   font-family: $default-font-family;
 }

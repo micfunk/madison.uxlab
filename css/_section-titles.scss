@@ -1,31 +1,25 @@
-.section-title {
-  @extend .pns-semibold;
-  @extend %center-text;
-  color: $rust;
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-
-.section-subtitle {
-  @extend %center-text;
-  @include grid-column(
-    $columns:10,
-    $collapse:true,
-    $center: true
-  );
-  @extend %pns-regular;
-  color: $text-gray;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  padding-bottom: 1rem;
-  @media #{$medium-up} {
-    @include grid-column(
-      $columns:9,
-      $collapse:true,
-      $center: true
-    );
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding-bottom: 5rem;
+@mixin section-titles($subtitle-color, $title-color) {
+  .section-title {
+    color: $title-color;
+    @extend .pns-bold;
+    @extend %center-text;
+    font-size: 1rem;
+    line-height: 1.5;
+    @media #{$medium-up} {
+      font-size: 1.5rem;
+    }
+  }
+  .section-subtitle {
+    margin-top: 0;
+    @extend %center-text;
+    @extend .pns-semibold;
+    color: $subtitle-color;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    @media #{$medium-up} {
+      font-size: 3rem;
+      line-height: 1.25;
+      padding: 0 10%;
+    }
   }
 }

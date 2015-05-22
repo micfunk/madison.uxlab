@@ -1,25 +1,25 @@
-.best-results-grid {
-  @include block-grid(
-   $per-row: 1,
-   $spacing: $block-grid-default-spacing,
-   $base-style: true
-   );
-   @media #{$medium-up} {
-     @include block-grid(
-      $per-row: 2,
-      $base-style: true
-      );
-   }
-  > li {
-    padding: 25px 50px 0px 50px;
-  }
-  h4 {
-    @extend .pns-semibold;
-    color: $warm-gray;
-  }
-  p {
-    color: $text-gray;
-    @extend %proxima-nova-light;
-    font-size: 1.15rem
+#best-results {
+  @include section-titles($rust, $text-gray);
+  background-color: $text-gray-15;
+  .best-results-grid {
+    @include block-grid(
+     $per-row: 1,
+     $spacing: $block-grid-default-spacing,
+     $base-style: true
+     );
+     @media #{$medium-up} {
+       @include block-grid(
+        $per-row: 2,
+        $base-style: true
+        );
+     }
+    > li {
+      padding: 25px 50px 0px 50px;
+    }
+    h4 {
+      @extend .pns-semibold;
+      color: $dark-gray;
+      font-size: 1.5rem;
+    }
   }
 }

@@ -1,8 +1,6 @@
 #process {
-  background-color: $new-blue;
-  h2 {
-    color: white;
-  }
+  background-color: white;
+  @include section-titles($rust, $text-gray);
   .process__item {
     @include grid-column(4);
   }
