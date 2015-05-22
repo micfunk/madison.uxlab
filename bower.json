@@ -17,8 +17,6 @@
     "qtip2": "~2.2.1",
     "jquery-waypoints": "~2.0.5",
     "jquery-smooth-scroll": "~1.5.2",
-    "bootstrap": "~3.3.4",
-    "bootstrap-sass-official": "~3.3.4",
     "foundation": "~5.5.2"
   }
 }
