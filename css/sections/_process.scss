@@ -1,0 +1,11 @@
+#process {
+  background-color: white;
+  @include section-titles($rust, $text-gray);
+  .process__item {
+    @include grid-column(4);
+  }
+  .full-width {
+    background-color: white;
+    height: 1px;
+  }
+}

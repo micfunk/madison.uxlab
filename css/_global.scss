@@ -1,0 +1,20 @@
+// some defaults -- overide if necessary
+
+// default type
+
+body {
+  background-color: #F2F4F4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gray;
+}
+
+p, li, ol, ul, blockquote, cite {
+  // @extend %pns-regular;
+  color: $text-gray;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: $text-gray;
+  font-family: $proxima;
+}

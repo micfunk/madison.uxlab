@@ -1,0 +1,18 @@
+#about {
+  background-color: white;
+  .about-content {
+    @include grid-column(
+      $columns:12,
+      $collapse: true,
+      $center: true
+    );
+    p {
+      @include grid-column(
+        $columns:9,
+        $collapse: true,
+        $center: true
+      );
+    }
+  }
+  @include section-titles($rust, $text-gray);
+}

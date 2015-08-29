@@ -1,23 +1,56 @@
 /* main css file */
-@import "foundation";
 @import "variables";
-@import "hero";
-@import "home";
-@import "footer";
-/* wufoo forms stuff */
-@import "form";
-@import "structure";
-@import "theme";
-@import "signup";
-@import "modal";
+@import "mixins";
+
+@import "../assets/vendor/foundation/scss/foundation/functions";
+@import "../assets/vendor/foundation/scss/foundation/components/global";
+@import "../assets/vendor/foundation/scss/foundation/components/grid";
+@import "../assets/vendor/foundation/scss/foundation/components/clearing";
+@import "../assets/vendor/foundation/scss/foundation/components/forms";
+@import "../assets/vendor/foundation/scss/foundation/components/block-grid";
+@import "../assets/vendor/foundation/scss/foundation/components/inline-lists";
+@import "../assets/vendor/foundation/scss/foundation/components/buttons";
+@import "../assets/vendor/foundation/scss/foundation/components/reveal";
+
+
+@import "helpers";
+@import "section-titles";
+@import "global";
+@import "typography";
+
+@import "sections/about";
+@import "sections/best-results";
+@import "sections/footer";
+@import "sections/hero";
+@import "sections/process";
+@import "sections/services";
+@import "sections/signup";
+@import "nav";
+@import "buttons";
+@import "signup-form";
+@import "tooltips";
+
+// vendored
 
 .signup {
   color: white;
 }
 
 body {
-  background-color: $grey;
   margin: 0;
   padding: 0;
-  color: white;
+  position: relative;
+}
+
+.content-section {
+  padding: 6rem 0;
+  @media #{$medium-up} {
+    padding: 15rem 0;
+  }
+}
+
+.wrap {
+  top: 1275px;
+  position: relative;
+  z-index: 1000;
 }

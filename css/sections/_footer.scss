@@ -1,0 +1,29 @@
+/*section specific vars*/
+$footer-border: 3px solid $dark-gray;
+
+footer {
+  @include grid-row();
+  display: block;
+  padding: 3rem;
+  background-color: white;
+  .footer-wrapper {
+    @include grid-column(12);
+    border-top: $footer-border;
+    > ul {
+      @include inline-list;
+      margin: 0 auto;
+      border-right: $footer-border;
+      border-left: $footer-border;
+      text-align: center;
+      .footer__item {
+        border-left: $footer-border;
+        color: black;
+        @extend .pns-medium;
+        padding: .5rem;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+  }
+}

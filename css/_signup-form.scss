@@ -1,0 +1,42 @@
+#signup-form {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include grid-row();
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  label {
+    color: $gray;
+    @extend .pns-semibold;
+    font-size: 1rem;
+    padding-bottom: 1.25rem;
+  }
+  input, textarea {
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background-color: $ultra-light-gray;
+    border: none;
+    padding: 1rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  input {
+    height: auto;
+  }
+  #foli113, #foli4, #foli108, #foli6 {
+    @include grid-columns-mq(12, 6, 6);
+  }
+  #foli109, #foli110 {
+    @include grid-column(
+      $columns:12,
+      $collapse:false,
+      $float:left
+      )
+  }
+}

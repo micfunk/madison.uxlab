@@ -1,0 +1,32 @@
+nav {
+  display: none;
+  @media #{$medium-up} {
+    display: block;
+    position: fixed;
+    right: 3rem;
+    top: 10rem;
+    z-index: 10000;
+    ul {
+      list-style-type: none;
+      padding-left: 30px;
+    }
+    a {
+      text-indent: -11111000px;
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 2px solid $nav-gray;
+      width: 15px;
+      height: 15px;
+      margin: 15px;
+      @include transition(all, .5s  ease-in-out);
+      &:hover {
+        border: 2px solid $orange;
+      }
+      &.current-section {
+        background-color: $nav-gray;
+      }
+    }
+  }
+
+}

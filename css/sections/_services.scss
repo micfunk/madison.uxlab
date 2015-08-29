@@ -1,0 +1,86 @@
+#whatwedo {
+  background-color: $dark-gray;
+  @include section-titles($text-gray, $new-blue);
+}
+
+.services {
+  position: relative;
+  @include grid-column(
+    $columns: 12
+  );
+  .service {
+    position: relative;
+    @include grid-row($behavior: nest);
+    padding-bottom: 8rem;
+    .service-image {
+      @include grid-column(
+        $columns:12,
+        $collapse:true
+      );
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+        height: auto;
+      }
+    }
+    .service-copy {
+      @include grid-column(
+        $columns:10,
+        $collapse:true,
+        $center:true
+        );
+      h2 {
+        @extend .pns-semibold;
+        font-size: 2.5rem;
+        color: $text-gray-15;
+      }
+      p {
+        color: $text-gray-75;
+      }
+    }
+
+    @media #{$medium-up} {
+      padding-bottom: 10rem 0;
+
+      .service-image {
+        @include grid-column(
+          $columns:4,
+          $collapse:false,
+          $float:left
+        );
+        img {
+          width: auto;
+        }
+      }
+      .service-copy {
+        @include grid-column(
+          $columns:7,
+          $collapse:false,
+          $float:right,
+          $push: 1
+          );
+      }
+      &:nth-child(even) {
+        .service-image {
+          @include grid-column(
+            $columns:4,
+            $collapse:false,
+            $float:right
+          );
+          img {
+            float: right;
+          }
+        }
+        .service-copy {
+          @include grid-column(
+            $columns:7,
+            $collapse:false,
+            $float:left,
+            $pull: 1
+            );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// A set of classes to include where necessary
+
+%center-text {
+  text-align: center;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

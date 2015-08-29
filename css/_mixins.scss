@@ -1,0 +1,43 @@
+@mixin vertical-align-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// a mixin to easily mix in grid columns once.
+@mixin grid-columns-mq($small, $medium, $large) {
+
+  @media #{$small-only} {
+  @include grid-column(
+    $columns: $small,
+    $collapse:false,
+    $float:left
+    )
+  }
+
+  @media #{$medium-only} {
+    @include grid-column(
+      $columns: $medium,
+      $collapse:false,
+      $float:left
+    )
+  }
+
+  @media #{$large-up} {
+    @include grid-column(
+      $columns: $large,
+      $collapse:false,
+      $float:left
+    )
+  }
+}
+
+@mixin transition($target, $time) {
+  -webkit-transition: $target $time;
+     -moz-transition: $target $time;
+      -ms-transition: $target $time;
+       -o-transition: $target $time;
+          transition: $target $time;
+}
