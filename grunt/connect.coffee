@@ -4,7 +4,8 @@ module.exports =
       port: 9000,
       hostname: 'localhost'
       keepalive: true
-      livereload: true;
+      base: 'www'
+
     # dist:
     #   options:
     #     base: '<%= yeoman.dist %>'

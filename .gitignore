@@ -3,3 +3,4 @@ assets/vendor/
 .sass-cache
 node_modules/
 .tmp/
+www/

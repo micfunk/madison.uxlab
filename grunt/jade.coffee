@@ -5,4 +5,4 @@ module.exports =
         debug: false
       pretty: true
     files:
-      "index.html": ["tmpl/index.jade"]
+      "www/index.html": ["tmpl/index.jade"]
