@@ -7,6 +7,7 @@ module.exports = (grunt) ->
     # set up everything for development
     'sass'
     'jade'
+    'copy'
     # then start tasks for server and watch
     'concurrent:dist'
   ]

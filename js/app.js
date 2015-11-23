@@ -1,5 +1,5 @@
 //init foundation
-  $(document).foundation();
+$(document).foundation();
 
 
 (function($) {

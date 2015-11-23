@@ -1,0 +1,90 @@
+
+$default-font-size: 1rem;
+
+// Proxima Nova Soft Weights
+// light: 300,
+// regular: 400,
+// medium: 500,
+// semibold: 600,
+// bold: 700
+
+@mixin type( $type: body-copy ) {
+  $types: (
+    primary-heading: (
+      font-family: $default-font-family,
+      font-size: 3rem,
+      font-weight: 600,
+    ),
+
+    secondary-heading: (
+      font-size: 16px,
+      font-weight: 700,
+      line-height: 22px
+    ),
+
+    body-copy: (
+      font-size: 16px,
+      line-height: 24px
+    ),
+  );
+
+  $type: map-get($types, $type);
+  font-family: map-get($type, font-family);
+  font-size: map-get($type, font-size);
+  font-weight: map-get($type, font-weight);
+}
+
+%page-title {
+  @include type(primary-heading);
+}
+
+%pns {
+  font-family: $default-font-family;
+}
+
+%proxima-nova-light {
+  font-family: $proxima-nova;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+%pns-regular {
+  @extend %pns;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pns-medium {
+  @extend %pns;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pns-semibold {
+  @extend %pns;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.pns-bold {
+  @extend %pns;
+  font-style: normal;
+  font-weight: 700;
+}
+
+//helpers
+
+%small-font-size {
+  font-size: .75rem;
+}
+
+
+h2 {
+  @extend .pns-semibold;
+}
+
+// Regular "proxima-nova-soft" 400 normal
+// Medium  "proxima-nova-soft" 500 normal
+// Semibold  "proxima-nova-soft" 600 normal
+// Bold  "proxima-nova-soft" 700

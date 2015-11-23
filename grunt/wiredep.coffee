@@ -1,6 +1,6 @@
 module.exports =
   bower:
-    src: 'tmpl/header.jade'
+    src: 'tmpl/partials/footer.jade'
     options:
       dependencies: true   # default: true
       devDependencies: true

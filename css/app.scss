@@ -1,6 +1,11 @@
-/* main css file */
-@import "variables";
-@import "mixins";
+// vars
+@import "vars/colors";
+@import "vars/type";
+
+// mixins
+@import 'mixins/grid-columns-mq';
+@import 'mixins/transitions';
+@import 'mixins/vertical-align-center';
 
 @import "../assets/vendor/foundation/scss/foundation/functions";
 @import "../assets/vendor/foundation/scss/foundation/components/global";
@@ -13,22 +18,28 @@
 @import "../assets/vendor/foundation/scss/foundation/components/reveal";
 
 
-@import "helpers";
-@import "section-titles";
-@import "global";
-@import "typography";
+// base
+@import "base/normalize";
+@import "base/utilities";
+@import "base/typography";
+@import "base/utilities";
 
-@import "sections/about";
-@import "sections/best-results";
-@import "sections/footer";
-@import "sections/hero";
-@import "sections/process";
-@import "sections/services";
-@import "sections/signup";
-@import "nav";
-@import "buttons";
-@import "signup-form";
-@import "tooltips";
+
+
+// modules
+@import "modules/section-titles";
+@import "modules/sections/about";
+@import "modules/sections/best-results";
+@import "modules/sections/footer";
+@import "modules/sections/hero";
+@import "modules/sections/process";
+@import "modules/sections/services";
+@import "modules/sections/signup";
+@import "modules/nav";
+@import "modules/buttons";
+@import "modules/signup-form";
+@import "modules/tooltips";
+
 
 // vendored
 

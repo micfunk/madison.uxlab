@@ -1,6 +1,4 @@
 module.exports =
-  options:
-    reload: true
   css:
     files: ['css/**/*.scss']
     tasks: [
@@ -11,6 +9,16 @@ module.exports =
     files: ['**/*.jade']
     tasks: [
       'jade'
+    ]
+  copy:
+    files: ['**/*', '!www/']
+    tasks: [
+      'copy'
+    ]
+  js:
+    files: ['**/*.js','!www/']
+    tasks: [
+      'concat'
     ]
 
   # jshint:

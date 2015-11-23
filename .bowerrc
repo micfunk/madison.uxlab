@@ -1,6 +1,3 @@
 {
-  "directory" : "assets/vendor",
-  "scripts": {
-    "postinstall": "grunt wiredep"
-  }
+  "directory" : "bower_components"
 }
