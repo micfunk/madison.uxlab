@@ -7,16 +7,7 @@
 @import 'mixins/transitions';
 @import 'mixins/vertical-align-center';
 
-@import "../assets/vendor/foundation/scss/foundation/functions";
-@import "../assets/vendor/foundation/scss/foundation/components/global";
-@import "../assets/vendor/foundation/scss/foundation/components/grid";
-@import "../assets/vendor/foundation/scss/foundation/components/clearing";
-@import "../assets/vendor/foundation/scss/foundation/components/forms";
-@import "../assets/vendor/foundation/scss/foundation/components/block-grid";
-@import "../assets/vendor/foundation/scss/foundation/components/inline-lists";
-@import "../assets/vendor/foundation/scss/foundation/components/buttons";
-@import "../assets/vendor/foundation/scss/foundation/components/reveal";
-
+@import "../bower_components/foundation/scss/foundation";
 
 // base
 @import "base/normalize";
